@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+<main>
+    <form action="#">
+        <h1>My Shopping List</h1>
+        <label for="shoppingItem">
+            Enter your item.
+            <input type="text" id="shoppingItem" placeholder="Input item here">
+        </label>
+        <Button id="submitButton">Submit</Button>
+    </form>
+
+    <ul class="shopping-list">
+        <!-- JS will insert li here -->
+    </ul>
+
+    <ul class="shopping-list-template">
+        <!-- JS templates will insert li here -->
+    </ul>
+
+    <template id="listItemTemplate">
+        <ul>
+            <li>
+                <span></span>
+                <input type="checkbox">
+                <button></button>
+            </li>
+        </ul>
+    </template>    
+</main>
+    
+    
+<script src="main.js"></script>
+<script src="async.js"></script>
+</body>
+</html>
